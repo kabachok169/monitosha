@@ -1,0 +1,13 @@
+#VSCode
+/.vscode
+
+# dependencies
+/node_modules
+
+# webstorm
+/.idea
+/report
+
+# production
+/build
+/dest
