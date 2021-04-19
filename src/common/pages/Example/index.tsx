@@ -16,12 +16,9 @@ class Example extends React.Component<InnerProps> {
       store: { example },
     } = this.props
 
-    
     return (
       <div className={c.root}>
-        <Button color="primary" variant="contained">
-          {example.text}
-        </Button>
+        
       </div>
     )
   }
@@ -34,7 +31,7 @@ const styles = createStyles({
 
   title: {
     fontSize: '32px',
-  }
+  },
 })
 
 export default compose<InnerProps, OuterProps>(withStyles(styles, 'Example'), inject('store'), observer)(Example)
